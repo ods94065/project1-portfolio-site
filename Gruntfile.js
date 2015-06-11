@@ -8,17 +8,17 @@ module.exports = function(grunt) {
     copy: {
       html: {
         files: [
-          {expand: true, cwd: 'src/', src: '*.html', dest: 'dest/'}
+          {expand: true, cwd: 'src/', src: '*.html', dest: 'build/'}
         ]
       },
       js: {
         files: [
-          {expand: true, cwd: 'src/', src: 'js/*.js', dest: 'dest/'}
+          {expand: true, cwd: 'src/', src: 'js/*.js', dest: 'build/'}
         ]
       },
       images: {
         files: [
-          {expand: true, cwd: 'src/', src: 'images/*.svg', dest: 'dest/'}
+          {expand: true, cwd: 'src/', src: 'images/*.svg', dest: 'build/'}
         ]
       }
     },
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
           optimization: 0
         },
         files: {
-          'dest/css/main.css': 'src/less/main.less'
+          'build/css/main.css': 'src/less/main.less'
         }
       }
     },
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
             autoprefixer({ browsers: ['last 2 versions'] }).postcss
           ]
       },
-      dist: { src: 'dest/css/main.css' }
+      dist: { src: 'build/css/main.css' }
     },
     image_resize: {
       project: {
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
           width: 250
         },
         files: [
-          {expand: true, cwd: 'src/', src: 'images/{appify,sunflower,bokeh}_crop.jpg', dest: 'dest/'}
+          {expand: true, cwd: 'src/', src: 'images/{appify,sunflower,bokeh}_crop.jpg', dest: 'build/'}
         ]
       }
     },
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
       },
       hero: {
         files: [
-          {expand: true, cwd: 'src/', src: 'images/golden_gate.jpg', dest: 'dest/'}
+          {expand: true, cwd: 'src/', src: 'images/golden_gate.jpg', dest: 'build/'}
         ]
       }
     },
@@ -81,7 +81,7 @@ module.exports = function(grunt) {
       }
     },
     clean: {
-      build: ['dest/']
+      build: ['build/']
     }
   });
 

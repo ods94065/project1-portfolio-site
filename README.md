@@ -16,7 +16,7 @@ command is on your path.
 
 ## Running
 
-The output of the build process is entirely static and is in `dest/`; feel
+The output of the build process is entirely static and is in `build/`; feel
 free to host that however you wish. For testing there is this option:
 
    * To run an HTTP server: `npm start` (runs on
