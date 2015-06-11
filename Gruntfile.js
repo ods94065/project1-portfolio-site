@@ -33,7 +33,8 @@ module.exports = function(grunt) {
     image_resize: {
       project: {
         options: {
-          width: 250
+          width: 250,
+          height: 150
         },
         files: [
           {expand: true, cwd: 'src/', src: 'images/{appify,sunflower,bokeh}_crop.jpg', dest: 'build/'}
