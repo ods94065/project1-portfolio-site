@@ -4,33 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Owen Smith - Software Wrangler</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <header>
-    <div class="logo">
+<body class="container">
+  <header class="row">
+    <div class="logo col-xs-2 col-sm-2">
       <img src="images/udacity.svg" alt="Udacity Logo">
     </div>
-    <div class="personal-title">
+    <div class="personal-title col-xs-10 col-sm-10">
       <h1>Owen Smith</h1>
       <h4>Software Wrangler</h4>
     </div>
   </header>
   <hr>
-  <div class="hero">
+  <div class="hero row">
     <img src="images/golden_gate-medium.jpg"
       srcset="images/golden_gate-small.jpg 320w, images/golden_gate-medium.jpg 640w, images/golden_gate-large.jpg 1024w"
-      sizes="100vw" alt="Golden Gate Bridge, from the Marin Headlands, fading into the mist">
+      sizes="100vw" alt="Golden Gate Bridge, from the Marin Headlands, fading into the mist"
+      class="col-md-12 img-responsive center-block">
   </div>
-  <section class="featured-work">
-    <h2>Featured Work</h2>
+  <section class="featured-work row">
+    <h2 class="col-xs-12">Featured Work</h2>
     <ul class="project-list">
-      <li class="project">
+      <li class="project col-xs-12 col-sm-6 col-md-4">
         <a data-toggle="modal" data-target="#appify-details">
-          <img src="images/appify_crop.jpg" alt="Appify">
+          <img src="images/appify_crop.jpg" alt="Appify"
+            class="img-responsive">
         </a>
         <h3>Appify</h3>
         <p>
@@ -39,9 +42,10 @@
           </a>
         </p>
       </li>
-      <li class="project">
+      <li class="project col-xs-12 col-sm-6 col-md-4">
         <a data-toggle="modal" data-target="#sunflower-details">
-          <img src="images/sunflower_crop.jpg" alt="Sunflower">
+          <img src="images/sunflower_crop.jpg" alt="Sunflower"
+            class="img-responsive">
         </a>
         <h3>Sunflower</h3>
         <p>
@@ -50,9 +54,10 @@
           </a>
         </p>
       </li>
-      <li class="project">
+      <li class="project col-xs-12 col-sm-6 col-md-4">
         <a data-toggle="modal" data-target="#bokeh-details">
-          <img src="images/bokeh_crop.jpg" alt="Bokeh">
+          <img src="images/bokeh_crop.jpg" alt="Bokeh"
+            class="img-responsive">
         </a>
         <h3>Bokeh</h3>
         <p>
@@ -73,7 +78,8 @@
           <h4 id="appify-title" class="modal-title">Appify</h4>
         </div>
         <div id="appify-desc" class="modal-body">
-          <img src="images/appify_crop.jpg" alt="Appify">
+          <img src="images/appify_crop.jpg" alt="Appify"
+            class="center-block">
           <p>Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Aliquam similique saepe,
           temporibus dolorum vitae asperiores pariatur
@@ -94,7 +100,8 @@
           <h4 id="sunflower-title" class="modal-title">Sunflower</h4>
         </div>
         <div id="sunflower-desc" class="modal-body">
-          <img src="images/sunflower_crop.jpg" alt="Sunflower">
+          <img src="images/sunflower_crop.jpg" alt="Sunflower"
+            class="center-block">
           <p>Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Aliquam similique saepe,
           temporibus dolorum vitae asperiores pariatur
@@ -115,7 +122,8 @@
           <h4 id="bokeh-title" class="modal-title">Bokeh</h4>
         </div>
         <div id="bokeh-desc" class="modal-body">
-          <img src="images/bokeh_crop.jpg" alt="Bokeh">
+          <img src="images/bokeh_crop.jpg" alt="Bokeh"
+            class="center-block">
           <p>Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Aliquam similique saepe,
           temporibus dolorum vitae asperiores pariatur

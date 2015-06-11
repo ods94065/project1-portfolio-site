@@ -22,25 +22,13 @@ module.exports = function(grunt) {
         ]
       }
     },
-    less: {
-      all: {
-        options: {
-          compress: false,
-          yuicompress: false,
-          optimization: 0
-        },
-        files: {
-          'build/css/main.css': 'src/less/main.less'
-        }
-      }
-    },
     postcss: {
       options: {
           processors: [
             autoprefixer({ browsers: ['last 2 versions'] }).postcss
           ]
       },
-      dist: { src: 'build/css/main.css' }
+      dist: { src: 'src/css/main.css', dest: 'build/css/main.css' }
     },
     image_resize: {
       project: {
@@ -67,8 +55,8 @@ module.exports = function(grunt) {
         livereload: true
       },
       css: {
-        files: 'src/less/*.less',
-        tasks: ['less', 'postcss']
+        files: 'src/css/*.css',
+        tasks: ['postcss']
 
       },
       html: {
@@ -87,6 +75,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask(
     'default',
-    ['copy', 'less', 'postcss', 'image_resize', 'responsive_images', 'watch']
+    ['copy', 'postcss', 'image_resize', 'responsive_images', 'watch']
   );
 };

@@ -1,0 +1,115 @@
+body {
+  color: #747704;
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  color: #BCBBBB;
+  border: 2px solid;
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 100%;
+  min-width: 80px;
+  max-width: 150px;
+  margin-top: 24px;
+}
+
+.personal-title {
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+.personal-title h1 {
+  font-weight: 200;
+  font-size: 32pt;
+}
+
+.personal-title h4 {
+  font-weight: 300;
+  font-size: 14pt;
+}
+
+.featured-work h2 {
+    color: #BCBBBB;
+    margin: 30px 0 20px 0;
+    font-weight: 300;
+
+    /* Pad in a bit from the left.
+     * Note: Columns use padding to counteract Bootstrap's outdent on the row.
+     * Since we are modifying the column directly, instead of making a new
+     * div inside the column, we need to add an extra 15px to get the
+     * column's normal padding behavior.
+     */
+    padding-left: 30px;
+}
+
+.project-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project {
+  display: block;
+  text-align: center;
+}
+
+.project h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 24pt;
+  margin-bottom: 0;
+}
+
+.project img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project p {
+  padding: 10px 0 20px 0;
+}
+
+.project a {
+  color: #747704;
+  font-size: 14pt;
+  font-weight: 200;
+}
+
+.modal-header button {
+  font-size: 48px;
+}
+
+.modal-title {
+  font-size: 28pt;
+  font-weight: 100;
+}
+
+.modal-body img {
+  padding-bottom: 10px;
+}
+
+.modal-body p {
+  padding-top: 10px;
+  font-size: 16pt;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 600px) {
+  .personal-title h1 { font-size: 36pt; }
+  .personal-title h4 {
+    font-weight: 300;
+    font-size: 18pt;
+  }
+  .project h3 { font-size: 28pt; }
+  .project a { font-size: 16pt; }
+  .hero p {
+    font-size: 24pt;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .personal-title h1 { font-size: 48pt; }
+}
